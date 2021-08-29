@@ -1,0 +1,118 @@
+
+/************************ TAG SELECTORS ************************/
+body{
+  background-color: #11324D;
+  text-align: center;
+}
+
+details {
+  text-align: left;
+  padding: .5em .5em 0;
+}
+
+summary {
+  margin: -.5em -.5em 0;
+  padding: .5em;
+}
+
+details[open] {
+  padding: .5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: .5em;
+}
+
+/************************ CLASS SELECTORS ************************/
+
+.container {
+  display: block;
+  width: 40%;
+  margin: auto;
+}
+
+.main-text{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5rem;
+  color: #F0E5CF;
+  margin: 5% auto;
+  line-height: 2;
+}
+
+.side-text{
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Hina Mincho', serif; */
+  color: #F0E5CF;
+  text-align: left;
+  padding-left: 5%;
+}
+
+
+.green{
+  background-color: green;
+}
+
+.red{
+  background-color: red;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.button{
+  margin: 10%;
+  height: 150px;
+  width: 150px;
+  border: 10px solid #2B2B2B;
+  border-radius: 20%;
+}
+
+.start-button{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+
+
+/************************ MOBILE VIEW ************************/
+
+@media (max-width: 700px){
+
+
+  .container {
+    width: 80%;
+  }
+
+  .main-text{
+    font-size: 1.5rem;
+    margin-top: 10%;
+  }
+
+  .button{
+    margin: 10%;
+    height: 120px;
+    width: 120px;
+  }
+
+  .start-button{
+    margin-top: 15%;
+  }
+
+}

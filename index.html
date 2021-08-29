@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Simon Game</title>
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Press+Start+2P&family=Montserrat&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+
+
+      <h1 class="main-text">Simon Game</h1>
+
+      <details class="side-text">
+      <summary class="side-text">Instructions</summary>
+      <p><strong>1. </strong>Press the START button. Simon will give the first signal. Repeat the signal by pressing the same color button.</p>
+      <p><strong>2. </strong>Simon will duplicate the first signal and add one. Repeat these two signals by pressing the same color buttons, in order.</p>
+      <p><strong>3. </strong>Simon will duplicate these first two signals and add one.</p>
+      <p><strong>4. </strong>Keep doing it, and don't mess up the order or You will lose.</p>
+      </details>
+
+      <div class="row">
+        <div class="col-6">
+          <button id=green class="button green"></button>
+        </div>
+
+        <div class="col-6">
+          <button id=red class="button red"></button>
+        </div>
+
+        <div class="col-6">
+          <button id=yellow class="button yellow"></button>
+        </div>
+
+        <div class="col-6">
+          <button id=blue class="button blue"></button>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 col-10 mx-auto">
+      <button class="btn btn-success start-button" type="button">Start Game</button>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+    <!-- jQuery Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- EXTERNAL JAVASCRIPT -->
+    <script src="game.js" charset="utf-8"></script>
+
+  </body>
+</html>
