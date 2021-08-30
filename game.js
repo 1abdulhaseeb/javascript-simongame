@@ -1,4 +1,5 @@
 
+$(".restart-button").hide();
 var gamePattern = [];
 var userClickedPattern = [];
 var buttonColors = ["blue", "green", "yellow", "red"];
@@ -48,11 +49,10 @@ function checkAnswer(currentLevel){
     }, 200);
 
     $(".main-text").text("Game Over! at level " + level);
-    $(".start-button").text("Restart Game");
-    $(".start-button").show();
-    $(".start-button").click(function(){
+    $(".restart-button").show();
+    $(".restart-button").click(function(){
       startOver();
-    });
+    })
   }
 }
 function computer(){
@@ -97,10 +97,12 @@ function checkEqual(currentLevel){
 }
 
 function startOver(){
-  level = 0;
+  level =0;
   gamePattern = [];
+  userClickedPattern = [];
   count = 0;
   $(".main-text").text("Simon Game");
   $(".side-text").show();
-  $(".start-button").text("Start Game");
+  $(".restart-button").hide();
+  $(".start-button").show();
 }
