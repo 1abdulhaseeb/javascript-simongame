@@ -78,6 +78,11 @@ details[open] summary {
   margin-bottom: 5%;
 }
 
+.restart-button{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 
 .pressed {
   box-shadow: 0 0 20px white;
@@ -112,6 +117,10 @@ details[open] summary {
   }
 
   .start-button{
+    margin-top: 15%;
+  }
+
+  .restart-button{
     margin-top: 15%;
   }
 
